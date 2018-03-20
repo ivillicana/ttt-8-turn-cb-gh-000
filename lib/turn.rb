@@ -13,11 +13,8 @@ def valid_move?(array, index)
     else
       false
     end
-<<<<<<< HEAD
   else
     false
-=======
->>>>>>> 3fa1e1a349429faf5ce1b935a50c9a37801dbefd
   end
 end
 
