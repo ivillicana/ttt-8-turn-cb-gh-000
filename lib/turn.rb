@@ -13,8 +13,11 @@ def valid_move?(array, index)
     else
       false
     end
+<<<<<<< HEAD
   else
     false
+=======
+>>>>>>> 3fa1e1a349429faf5ce1b935a50c9a37801dbefd
   end
 end
 
@@ -30,11 +33,10 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
-  until valid_move?(board, index) == true
-    puts "Please enter 1-9:"
-    input = gets.strip
-    index = input_to_index(input)
+  if valid_move?(board, index) == true
+    move(board, index)
+  else
+    turn(board)
   end
-  move(board, index)
   display_board(board)
 end
